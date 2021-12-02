@@ -13,7 +13,9 @@ class AnsiedadeViewController: UIViewController {
     @IBOutlet weak var coverView: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     
-    private var didTapPlay: Bool = false
+    private var didTapPlay = false
+    private var firstPlay = 1
+    let ricardo = SpeechService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +36,21 @@ class AnsiedadeViewController: UIViewController {
     
     @IBAction func didTapPlayButton(_ sender: UIButton) {
         didTapPlay.toggle()
-        
+
+        //resume playback
         if didTapPlay {
             self.playButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+            
+            ricardo.resume()
+        
+            if !ricardo.isSpeaking(){
+                ricardo.say(something: "飛雷神　ニの段")
+            }
         }
+        //pause playback
         else {
             self.playButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            ricardo.pause()
         }
     }
     
