@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD60FC42756BD5500F7E99A /* AnsiedadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD60FC32756BD5500F7E99A /* AnsiedadeViewController.swift */; };
+		1BD60FC62756BDEB00F7E99A /* Ansiedade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD60FC52756BDEB00F7E99A /* Ansiedade.storyboard */; };
 		CCC2AE602756A412008DDAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE5F2756A412008DDAC5 /* AppDelegate.swift */; };
 		CCC2AE622756A412008DDAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE612756A412008DDAC5 /* SceneDelegate.swift */; };
 		CCC2AE642756A412008DDAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE632756A412008DDAC5 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BD60FC32756BD5500F7E99A /* AnsiedadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnsiedadeViewController.swift; sourceTree = "<group>"; };
+		1BD60FC52756BDEB00F7E99A /* Ansiedade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ansiedade.storyboard; sourceTree = "<group>"; };
 		CCC2AE5C2756A412008DDAC5 /* Mindless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC2AE5F2756A412008DDAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC2AE612756A412008DDAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				CCC2AE5F2756A412008DDAC5 /* AppDelegate.swift */,
 				CCC2AE612756A412008DDAC5 /* SceneDelegate.swift */,
 				CCC2AE632756A412008DDAC5 /* ViewController.swift */,
+				1BD60FC52756BDEB00F7E99A /* Ansiedade.storyboard */,
 				CCC2AE652756A412008DDAC5 /* Main.storyboard */,
 				CCC2AE682756A415008DDAC5 /* Assets.xcassets */,
 				CCC2AE6A2756A415008DDAC5 /* LaunchScreen.storyboard */,
 				CCC2AE6D2756A415008DDAC5 /* Info.plist */,
+				1BD60FC32756BD5500F7E99A /* AnsiedadeViewController.swift */,
 			);
 			path = Mindless;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				CCC2AE6C2756A415008DDAC5 /* LaunchScreen.storyboard in Resources */,
 				CCC2AE692756A415008DDAC5 /* Assets.xcassets in Resources */,
 				CCC2AE672756A412008DDAC5 /* Main.storyboard in Resources */,
+				1BD60FC62756BDEB00F7E99A /* Ansiedade.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC2AE642756A412008DDAC5 /* ViewController.swift in Sources */,
+				1BD60FC42756BD5500F7E99A /* AnsiedadeViewController.swift in Sources */,
 				CCC2AE602756A412008DDAC5 /* AppDelegate.swift in Sources */,
 				CCC2AE622756A412008DDAC5 /* SceneDelegate.swift in Sources */,
 			);
