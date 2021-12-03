@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6285375D2757E6580006BEE5 /* Guiada.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 622712C32756BDC70066CFAB /* Guiada.storyboard */; };
 		CCC2AE602756A412008DDAC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE5F2756A412008DDAC5 /* AppDelegate.swift */; };
 		CCC2AE622756A412008DDAC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE612756A412008DDAC5 /* SceneDelegate.swift */; };
 		CCC2AE642756A412008DDAC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC2AE632756A412008DDAC5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		622712C32756BDC70066CFAB /* Guiada.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guiada.storyboard; sourceTree = "<group>"; };
 		CCC2AE5C2756A412008DDAC5 /* Mindless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC2AE5F2756A412008DDAC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC2AE612756A412008DDAC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CCC2AE682756A415008DDAC5 /* Assets.xcassets */,
 				CCC2AE6A2756A415008DDAC5 /* LaunchScreen.storyboard */,
 				CCC2AE6D2756A415008DDAC5 /* Info.plist */,
+				622712C32756BDC70066CFAB /* Guiada.storyboard */,
 			);
 			path = Mindless;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6285375D2757E6580006BEE5 /* Guiada.storyboard in Resources */,
 				CCC2AE6C2756A415008DDAC5 /* LaunchScreen.storyboard in Resources */,
 				CCC2AE692756A415008DDAC5 /* Assets.xcassets in Resources */,
 				CCC2AE672756A412008DDAC5 /* Main.storyboard in Resources */,
@@ -294,7 +298,7 @@
 				INFOPLIST_FILE = Mindless/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Guiada;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +326,7 @@
 				INFOPLIST_FILE = Mindless/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Guiada;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
