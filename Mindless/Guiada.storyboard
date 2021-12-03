@@ -40,6 +40,9 @@
                                     </preferredSymbolConfiguration>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pauseButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DYf-ab-hbo"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="meditacao-guiada" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-2E-hRQ">
                                 <rect key="frame" x="26" y="147" width="341" height="408"/>
@@ -51,7 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="imageGuiada" destination="pWc-2E-hRQ" id="hS4-cQ-B43"/>
-                        <outlet property="playButton" destination="Hf5-YR-X6r" id="hbl-Fw-U0r"/>
+                        <outlet property="playButton" destination="Hf5-YR-X6r" id="wEr-AX-oVX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
