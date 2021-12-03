@@ -12,7 +12,7 @@ class SpeechService {
     private let synthesizer = AVSpeechSynthesizer()
     
     var rate: Float = AVSpeechUtteranceDefaultSpeechRate
-    var voice = AVSpeechSynthesisVoice(language: "ja-JP")
+    var voice = AVSpeechSynthesisVoice(language: "pt-BR")
     
     func say(something phrase: String) {
         let utterance = AVSpeechUtterance(string: phrase)

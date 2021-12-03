@@ -32,7 +32,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-FS-HCc">
                                 <rect key="frame" x="162" y="580" width="90" height="90"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" name="buttonAndIconColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="HZm-Cp-ZA7"/>
                                     <constraint firstAttribute="height" constant="90" id="P3y-B7-vgd"/>
@@ -81,11 +81,11 @@
         <image name="Ansiedade" width="336" height="407"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="tortoise.fill" catalog="system" width="128" height="66"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="MediumGreenBackground">
             <color red="0.57647058823529407" green="0.75294117647058822" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonAndIconColor">
+            <color red="0.95300000905990601" green="0.74099999666213989" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
