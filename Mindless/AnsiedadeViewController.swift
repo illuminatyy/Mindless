@@ -26,7 +26,7 @@ class AnsiedadeViewController: UIViewController {
         imageAttachment.image = UIImage(systemName: "tortoise.fill")
 
         // If you want to enable Color in the SF Symbols.
-        imageAttachment.image = UIImage(systemName: "tortoise.fill")?.withTintColor(.blue)
+        imageAttachment.image = UIImage(systemName: "tortoise.fill")?.withTintColor(UIColor(named: "buttonAndIconColor") ?? .blue)
 
         let fullString = NSMutableAttributedString(string: "Para a ansiedade ")
         fullString.append(NSAttributedString(attachment: imageAttachment))
