@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Noite-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="sleep" id="Y6W-OH-hqX" customClass="SleepViewController" customModule="Mindless" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleepNight" translatesAutoresizingMaskIntoConstraints="NO" id="2Qa-7c-6JC">
+                                <rect key="frame" x="27.5" y="138" width="359" height="407"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="407" id="Qoa-hG-3Ra"/>
+                                    <constraint firstAttribute="width" secondItem="2Qa-7c-6JC" secondAttribute="height" multiplier="359:407" id="Wt7-ox-40d"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7uh-dF-wUw">
+                                <rect key="frame" x="59" y="71" width="296" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Para dormir bem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXt-Qp-R2q">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j1F-Ea-uBy">
+                                        <rect key="frame" x="256" y="-1.5" width="40" height="43"/>
+                                        <color key="tintColor" name="buttonAndIconColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8Mg-jz-Qu6"/>
+                                            <constraint firstAttribute="width" secondItem="j1F-Ea-uBy" secondAttribute="height" multiplier="1:1" id="Dhx-jj-miP"/>
+                                        </constraints>
+                                        <imageReference key="image" image="moon.fill" catalog="system" symbolScale="large"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qds-Zu-6sE">
+                                <rect key="frame" x="169" y="582" width="76" height="76"/>
+                                <color key="backgroundColor" name="buttonAndIconColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qds-Zu-6sE" secondAttribute="height" multiplier="1:1" id="haG-Ho-bfU"/>
+                                    <constraint firstAttribute="height" priority="999" constant="76" id="kix-cg-WLc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapStartMeditation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xvc-Bm-yXk"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ibd-3V-oLa">
+                                <rect key="frame" x="0.0" y="746" width="414" height="47"/>
+                                <color key="backgroundColor" name="SleepTheme"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="uiH-Hh-B2I"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ve3-kf-EOD">
+                                    <size key="itemSize" width="176" height="47"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="episode" id="8ym-GA-Qv8" customClass="SleepCollectionViewCell" customModule="Mindless" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.5" width="176" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VbF-Kw-21v">
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMK-Qz-0EZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="46"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UHL-vl-HQf">
+                                                            <rect key="frame" x="16.5" y="14.5" width="143" height="17"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1kP-36-9y9">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="17" id="7vg-PQ-daW"/>
+                                                                        <constraint firstAttribute="width" constant="17" id="ntR-c4-M3b"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noite relaxante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7L-mK-nP1">
+                                                                    <rect key="frame" x="25" y="0.0" width="118" height="17"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="relaxNight"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="1P2-0d-cgY"/>
+                                                        <constraint firstItem="UHL-vl-HQf" firstAttribute="centerX" secondItem="TMK-Qz-0EZ" secondAttribute="centerX" id="FLy-Y8-lUB"/>
+                                                        <constraint firstItem="UHL-vl-HQf" firstAttribute="centerY" secondItem="TMK-Qz-0EZ" secondAttribute="centerY" id="OQP-KK-5Ip"/>
+                                                        <constraint firstAttribute="height" constant="47" id="rQK-pP-yjL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" name="SleepTheme"/>
+                                            <constraints>
+                                                <constraint firstItem="TMK-Qz-0EZ" firstAttribute="top" secondItem="VbF-Kw-21v" secondAttribute="top" id="Do4-sj-lLi"/>
+                                                <constraint firstItem="TMK-Qz-0EZ" firstAttribute="leading" secondItem="VbF-Kw-21v" secondAttribute="leading" id="EDZ-qd-1eb"/>
+                                                <constraint firstAttribute="trailing" secondItem="TMK-Qz-0EZ" secondAttribute="trailing" id="b96-ry-Bjl"/>
+                                                <constraint firstAttribute="bottom" secondItem="TMK-Qz-0EZ" secondAttribute="bottom" id="pKA-5n-jaZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="176" height="46"/>
+                                        <connections>
+                                            <outlet property="descriptionCell" destination="B7L-mK-nP1" id="OcX-dv-Rud"/>
+                                            <outlet property="iconImageCell" destination="1kP-36-9y9" id="AuH-wP-KjQ"/>
+                                            <outlet property="shadowView" destination="TMK-Qz-0EZ" id="c7t-w4-GUN"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="sleepTheme"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ibd-3V-oLa" secondAttribute="bottom" constant="20" id="1XH-ck-x5d"/>
+                            <constraint firstItem="7uh-dF-wUw" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="27" id="Aak-ir-xYP"/>
+                            <constraint firstItem="2Qa-7c-6JC" firstAttribute="top" secondItem="7uh-dF-wUw" secondAttribute="bottom" constant="27" id="JIp-O5-4e0"/>
+                            <constraint firstItem="2Qa-7c-6JC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27.5" id="Mph-YH-lNa"/>
+                            <constraint firstItem="qds-Zu-6sE" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="QgZ-AC-wwZ"/>
+                            <constraint firstItem="Ibd-3V-oLa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Wdc-xw-aXC"/>
+                            <constraint firstItem="Ibd-3V-oLa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="e8R-nt-LJF"/>
+                            <constraint firstItem="qds-Zu-6sE" firstAttribute="top" secondItem="2Qa-7c-6JC" secondAttribute="bottom" constant="37" id="k7A-N5-pIv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Qa-7c-6JC" secondAttribute="trailing" constant="27.5" id="ksA-TN-FDP"/>
+                            <constraint firstItem="7uh-dF-wUw" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="l4h-xI-jbg"/>
+                            <constraint firstItem="2Qa-7c-6JC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rN7-9h-acc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Noite" image="moon.fill" catalog="system" id="3G4-GA-NKI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionViewChapters" destination="Ibd-3V-oLa" id="EAS-TU-lcR"/>
+                        <outlet property="imageSleepWell" destination="2Qa-7c-6JC" id="PHT-9U-T5S"/>
+                        <outlet property="playPauseButtonSleepWell" destination="qds-Zu-6sE" id="JaS-5k-4mO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="979.71014492753636" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="sleepNight" width="335" height="407"/>
+        <namedColor name="SleepTheme">
+            <color red="0.0080000003799796104" green="0.36899998784065247" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonAndIconColor">
+            <color red="0.95300000905990601" green="0.74099999666213989" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="relaxNight">
+            <color red="0.016000000759959221" green="0.49399998784065247" blue="0.60399997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sleepTheme">
+            <color red="0.0080000003799796104" green="0.36899998784065247" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
