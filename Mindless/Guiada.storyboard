@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Guiada-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="ViewController" customModule="Mindless" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,8 +50,10 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.72941176470588232" green="0.85098039215686272" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.72209003718674969" green="0.80771445907464545" blue="0.83876708520322185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Guiada" image="waveform" catalog="system" id="cxw-Ri-88M"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageGuiada" destination="pWc-2E-hRQ" id="hS4-cQ-B43"/>
                         <outlet property="playButton" destination="Hf5-YR-X6r" id="wEr-AX-oVX"/>
